@@ -1,22 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Connor Sullivan</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
     <link href="./output.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-slate-300">
-    <div class="container mx-auto px-10">
-      <h1 class="my-5 text-5xl font-sans font-bold">Connor Sullivan</h1>
-      <article>
-        <h2 class="text-3xl font-sans font-bold">About Me</h2>
-        <p class="text-lg font-serif">
-          I am a software engineer with a passion for creating and maintaining
-          web applications. I have experience with a variety of technologies
-          including JavaScript, React, Node.js, and Python. I am always looking
-          to learn new things and improve my skills.
-        </p>
-      </article>
+
+  <body class="bg-gray-100 text-gray-700 font-sans quicksand">
+    <div class="p-6 sm:p-10 md:p-16 flex flex-wrap">
+      <div class="w-full md:w-1/2 md:pr-32 order-3 md:order-1">
+        <div
+          class="max-w-md md:float-right md:text-right leading-loose tracking-tight md:sticky md:top-0"
+        >
+          <p class="font-bold my-4 md:my-4">Skip to</p>
+
+          <ul class="flex flex-wrap justify-between flex-col">
+            <li><a href="#experience" class="nav">Experience</a></li>
+            <li>
+              <a href="#education" class="nav">Education</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav">Projects</a>
+            </li>
+          </ul>
+          <!-- <a href="#" class="normal font-bold hover:font-bold">more...</a> -->
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 order-1 md:order-2">
+        <div class="max-w-md leading-loose tracking-tight">
+          <img src="./me.jpg" alt="" />
+          <h1 class="font-bold my-4">About me, Connor Sullivan</h1>
+
+          <p class="mb-8">
+            I'm a senior software engineer based in Toronto, Canada. Interests
+            include geopolitics, minimalism, long distance running, virtual
+            power, and raining triples on my enemies in basketball. I used to
+            play guitar but I live in a condo now so that's on hold.
+          </p>
+
+          <h1 id="experience" class="font-bold my-4">Experience</h1>
+
+          <h2>
+            <a href="https://www.octopus.energy/">Octopus Energy</a> (2020 to
+            present)
+          </h2>
+          <p class="mb-8">
+            I currently work on the US-based domestic asset integrations team,
+            which is a fancy term for the team that connects with customer
+            residential energy assets such as home batteries, solar panels, and
+            EVs. We then abstract them behind a virtual power plant API
+            consumable by electricity system operators. When I lived in the UK,
+            I worked for the core optimisation team which used Python and it's
+            myriad of data science libraries the find the mathematically optimal
+            way to dispatch and control the aforementioned assets. By
+            mathematically optimal, I mean most profitable 🤭.
+          </p>
+
+          <h2>
+            <a href="https://www.limejump.com/">Limejump</a> (2018 to 2020)
+          </h2>
+          <p class="mb-8">
+            My first job after moving to the UK, Limejump is an award-winning
+            pioneer in the virtual energy space. I lead the billing team,
+            responsible for aggragating customer contract and meter data, then
+            crunching the numbers into a sendable invoice. In 2019, I did a
+            secondment as an Energy Trader at our in-house energy trading desk,
+            where I traded power from our commissioned energy assets on the EPEX
+            intraday and day-ahead energy markets. Also in 2019, Limejump was
+            acquired by Shell and incorporated into the Shell New Energies
+            department, which coincidentally was the day I discovered my love of
+            employee option grants.
+          </p>
+
+          <h2>
+            <a href="https://www.grantbook.org/">Grantbook</a> (2015 to 2018)
+          </h2>
+          <p class="mb-8">
+            Grantbook is a boutique tech consultancy and certified B Corp that
+            provides tech advisory and implementation serves to the desparately
+            underserved non-profit sector. As their first software developer, I
+            was tasked with plugging technological gaps between the existing
+            enterprise software solutions with custom code in Python and/or
+            Javascript. Highlights include a custom Zapier plugin for a popular
+            GMS (Grant Management System) and a payments processing system that
+            turned bank files from the stone age into cold, hard cash to grant
+            recipients for a prominent Chicago-based foundation.
+          </p>
+
+          <h1 id="education" class="font-bold my-4">Education</h1>
+          <p class="mb-8">
+            I have a Bachelor of Arts with a major in Economics and minor in
+            Math from <a href="https://www.mcgill.ca/">McGill University</a>.
+            Entering university I wanted to be a lawyer, but after reading my
+            first apartment lease I decided to find a career path that wouldn't
+            make me want to kill myself. After taking courses in nearly
+            everything, I discovered that that I liked dealing with numbers and
+            that I was good at programming.
+          </p>
+
+          <p class="mb-8">
+            In 2022,
+            <a
+              href="https://www.credly.com/badges/0c9a4642-5e1a-4db4-8d3e-c6eedbf2d238/linked_in_profile"
+              >I became an AWS Certified Solutions Architect - Associate</a
+            >. Which means given any problem I can find the solution with the
+            absolute maximum AWS vendor lock-in.
+          </p>
+
+          <h1 id="projects" class="font-bold my-4">Projects</h1>
+          <h2>
+            <a href="https://birddave.com/">BirdDave</a>
+          </h2>
+          <p class="mb-8">
+            For my bird photographer father's 70 birthday, I made him a simple
+            web application to upload, categorize, and display his bird photos.
+            I used Next.js, Tailwind CSS, and SST to deploy it to AWS. I made
+            the whole thing from scratch, which in retrospect was a mistake
+            since my design skills are terrible. In true agile fashion, I'll add
+            new features once he requires them, which will be probably be never
+            because his baby boomer soul rejects new technology like an organ
+            transplant.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-full md:w-1/2 md:pr-32 pt-12 md:pt-0 md:sticky md:bottom-0 order-4 md:order-3"
+      >
+        <div
+          class="max-w-md md:float-right md:text-right leading-loose tracking-tight md:mb-16"
+        >
+          <p class="font-bold my-4 md:my-4">Links</p>
+
+          <ul class="flex flex-wrap justify-between flex-row md:flex-col">
+            <li>
+              <a href="https://github.com/condad" class="nav mx-2 md:mx-0"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a href="mailto:sully4792@gmail.com" class="nav mx-2 md:mx-0"
+                >Email</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="w-full md:w-1/2 order-2 md:order-4">
+        <div class="max-w-md leading-loose tracking-tight">
+          <p class="font-bold my-4 md:my-4">About Me</p>
+
+          <p class="mb-8">
+            Should I use this section?
+          </p>
+        </div>
+      </div> -->
     </div>
+
+    <!-- Pin to top right corner -->
+    <div class="absolute top-0 right-0 h-12 w-18 p-4">
+      <button class="js-change-theme focus:outline-none">🌙</button>
+    </div>
+
+    <script>
+      //Toggle mode
+      const toggle = document.querySelector('.js-change-theme');
+      const body = document.querySelector('body');
+      //const profile = document.getElementById('profile');
+
+      toggle.addEventListener('click', () => {
+        if (body.classList.contains('text-gray-700')) {
+          toggle.innerHTML = '☀️';
+          body.classList.remove('text-gray-700');
+          body.classList.add('text-gray-300');
+          body.classList.remove('bg-gray-100');
+          body.classList.add('bg-gray-900');
+        } else {
+          toggle.innerHTML = '🌙';
+          body.classList.remove('text-gray-300');
+          body.classList.add('text-gray-700');
+          body.classList.remove('bg-gray-900');
+          body.classList.add('bg-gray-100');
+        }
+      });
+    </script>
   </body>
 </html>
